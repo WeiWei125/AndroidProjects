@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">QuizApp</string>
+    <string name="true_button">True</string>
+    <string name="false_button">False</string>
+    <string name="question_text">
+        Wei Zhao is the most beautiful girl in the world!
+    </string>
+    <string name="wrong_answer_response">
+        You don\'t love me. You bad bad!
+    </string>
+    <string name="right_answer_response">
+        You are telling the truth. Good boy!
+    </string>>
 </resources>
