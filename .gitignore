@@ -7,7 +7,6 @@
 /build
 /captures
 .externalNativeBuild
-@ -0,0 +1,55 @@
 # Built application files
 *.apk
 *.ap_
