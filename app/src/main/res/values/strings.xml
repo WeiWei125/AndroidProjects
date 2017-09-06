@@ -10,5 +10,7 @@
     </string>
     <string name="right_answer_response">
         You are telling the truth. Good boy!
-    </string>>
+    </string>
+    <string name="correct_toast">Correct!</string>
+    <string name="incorrect_toast">Incorrect!</string>
 </resources>
