@@ -2,9 +2,7 @@
     <string name="app_name">QuizApp</string>
     <string name="true_button">True</string>
     <string name="false_button">False</string>
-    <string name="question_text">
-        Wei Zhao is the most beautiful girl in the world!
-    </string>
+
     <string name="wrong_answer_response">
         You don\'t love me. You bad bad!
     </string>
@@ -13,4 +11,23 @@
     </string>
     <string name="correct_toast">Correct!</string>
     <string name="incorrect_toast">Incorrect!</string>
+    <string name="next_button">next question</string>
+    <string name="question_longest_legs">
+        Wei Zhao has the longest legs in the world!
+    </string>
+    <string name="question_biggest_baby">
+        Wei Zhao is the biggest baby in the world!
+    </string>
+    <string name="question_beautiful_girl">
+        Wei Zhao is the most beautiful girl in the world!
+    </string>
+    <string name="question_best_boyfriend">
+        Wei Zhao has the best boyfriend in the world!
+    </string>
+    <string name="question_spicy_stripe">
+        Wei Zhao loves spicy stripes!
+    </string>
+    <string name="question_big_face_cat">
+        Wei Zhao is big face cat because she loves eating fish!
+    </string>
 </resources>
