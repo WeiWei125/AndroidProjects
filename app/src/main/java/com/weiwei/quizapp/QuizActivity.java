@@ -10,12 +10,27 @@ import android.widget.Toast;
 public class QuizActivity extends AppCompatActivity {
     private Button mTrueButton;
     private Button mFalseButton;
+    private Button mNextButton;
+    private TextView mQuestionTextView;
+    private Question[] mQuestions = new Question[] {
+            new Question(R.string.question_beautiful_girl, true),
+            new Question(R.string.question_best_boyfriend, true),
+            new Question(R.string.question_big_face_cat, true),
+            new Question(R.string.question_biggest_baby, true),
+            new Question(R.string.question_longest_legs, true),
+            new Question(R.string.question_spicy_stripe, true),
+    };
+
+    private int currentIndex = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
+        mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
+        int question = mQuestions[currentIndex].getTextResourceId();
+        mQuestionTextView.setText(question);
 
         final TextView answerResponseView= (TextView) findViewById(R.id.answer_response_text);
 
@@ -36,5 +51,7 @@ public class QuizActivity extends AppCompatActivity {
                 Toast.makeText(QuizActivity.this, R.string.incorrect_toast, Toast.LENGTH_SHORT).show();
             }
         });
+
+        mNextButton = (Button) findViewById(R.id.next_button);
     }
 }
