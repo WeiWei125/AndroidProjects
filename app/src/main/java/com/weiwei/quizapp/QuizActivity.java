@@ -21,7 +21,7 @@ public class QuizActivity extends AppCompatActivity {
             new Question(R.string.question_spicy_stripe, true),
     };
 
-    private int currentIndex = 0;
+    private int mCurrentIndex = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +29,7 @@ public class QuizActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quiz);
 
         mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
-        int question = mQuestions[currentIndex].getTextResourceId();
-        mQuestionTextView.setText(question);
+        updateQuestionView();
 
         final TextView answerResponseView= (TextView) findViewById(R.id.answer_response_text);
 
@@ -53,5 +52,17 @@ public class QuizActivity extends AppCompatActivity {
         });
 
         mNextButton = (Button) findViewById(R.id.next_button);
+        mNextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mCurrentIndex = ++mCurrentIndex % mQuestions.length;
+                updateQuestionView();
+            }
+        });
+    }
+
+    private void updateQuestionView() {
+        int question = mQuestions[mCurrentIndex].getTextResourceId();
+        mQuestionTextView.setText(question);
     }
 }
